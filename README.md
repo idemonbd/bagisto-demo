@@ -90,11 +90,26 @@ http(s)://example.com
 ##### Execute these commands below, in order
 
 ~~~
-1. composer create-project bagisto/bagisto
+1. git clone https://github.com/idemonbd/bagisto-demo.git Bagisto
 ~~~
 
 ~~~
-2. php artisan bagisto:install
+2. cd Bagisto
+~~~
+~~~
+3. composer install
+~~~
+
+~~~
+4. copy .env.example .env
+~~~
+
+~~~
+5. php artisan key:generate
+~~~
+
+~~~
+6. php artisan migrate --seed
 ~~~
 
 **To execute Bagisto**:
